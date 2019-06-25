@@ -1,9 +1,9 @@
 #include <unistd.h>
 #include "holberton.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
- * Return: Always 0 (Success)
+ * No-Return: repeat a loop to print letters
  */
 void print_alphabet(void)
 {
