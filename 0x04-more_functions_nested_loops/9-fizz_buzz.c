@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ * This is a program for print Fizz and Buzz
+ * Return: 0 when the program finish
  */
 int main(void)
 {
