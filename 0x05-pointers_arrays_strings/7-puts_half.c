@@ -31,6 +31,7 @@ void puts_half(char *str)
 	else
 	{
 		x = x / 2;
+		x = x - 1;
 		y = 0;
 
 		while (y <= x)
