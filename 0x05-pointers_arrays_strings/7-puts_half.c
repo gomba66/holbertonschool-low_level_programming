@@ -15,15 +15,16 @@ void puts_half(char *str)
 		str++;
 		x++;
 	}
-	y = x;
+
 	if (x % 3 == 0)
 	{
+		y = x;
 		x = x - 1;
 		x = x / 2;
 
 		while (x != y)
 		{
-			_putchar(str[x]);
+			_putchar(x + '0');
 			x++;
 		}
 	}
@@ -32,9 +33,9 @@ void puts_half(char *str)
 		x = x / 2;
 		y = 0;
 
-		while (y != x)
+		while (y <= x)
 		{
-			_putchar(str[y]);
+			_putchar(y + '0');
 			y++;
 		}
 	}
