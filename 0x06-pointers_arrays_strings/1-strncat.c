@@ -4,6 +4,7 @@
  * @dest: is the first string that join as parameter
  * @src: is the second string that join as parameter
  * @n: is the mount of bytes declarated as parameter
+ * Return: Return the value of dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
