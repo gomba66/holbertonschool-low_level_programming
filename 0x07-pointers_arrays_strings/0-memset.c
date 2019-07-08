@@ -2,7 +2,7 @@
 /**
  * _memset - Entry point
  * This is a function for fill memory with a constant byte.
- * @s: This is the buffer
+ * @s: This is the buffer.
  * @b: This is the value that to be replaced
  * @n: This is the amount of times that the value will be replaced
  *
