@@ -3,7 +3,7 @@
  * _strstr - Entry point
  * @haystack: the char for print
  * @needle: null character or needle
- * Retunr: return a variable
+ * Return: return a variable
  */
 char *_strstr(char *haystack, char *needle)
 {
