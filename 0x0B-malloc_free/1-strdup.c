@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _strdup - Entry point
  * This is a program for copy a string and return the copy
@@ -9,7 +10,7 @@
 char *_strdup(char *str)
 {
 	int i = 0;
-	int n = 0;
+	int n = 1;
 	char *x;
 
 	if (str == '\0')
@@ -23,7 +24,9 @@ char *_strdup(char *str)
 			n++;
 			i++;
 		}
+
 		i = 0;
+
 		x = malloc(sizeof(char) * n);
 		if (x == '\0')
 		{
