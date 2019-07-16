@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * main - Entry point
  * This is a program for add two positive numbers
@@ -13,6 +16,26 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-
-	return(0);
+	else
+	{
+		int x = 0, y = 0;
+		if(isdigit(argv[x][y]))
+		{
+			for(x = 0; x < argc; x++)
+			{
+				for(y = 0; argv[x][y] != '\0'; y++)
+				{
+					if(!isdigit(argv[x][y]))
+					{
+						printf("Error\n");
+						return (1);
+					}
+				}
+			}
+		}
+		else
+		{
+		}
+	}
+	return (0);
 }
