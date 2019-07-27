@@ -3,6 +3,7 @@
  * sum_them_all - Entry point
  * This is a variadic function for add multiples args
  * @n:Is the number of items that entry like args
+ * Return: sum.
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -16,10 +17,10 @@ int sum_them_all(const unsigned int n, ...)
 		unsigned int x;
 		va_list numeros;
 
-		va_start(numeros,n);
+		va_start(numeros, n);
 		for (x = 0; x < n; x++)
 		{
-			sum = sum + va_arg(numeros,int);
+			sum = sum + va_arg(numeros, int);
 		}
 		va_end(numeros);
 		return (sum);
