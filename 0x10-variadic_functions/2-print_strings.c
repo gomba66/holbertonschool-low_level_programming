@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_numbers - Entry point
+ * print_strings - Entry point
  * This is a function for print a list of items
  * @separator: this is the separator between items
  * @n: Is the mount of items that are passed to the function
