@@ -40,9 +40,10 @@ void print_float(va_list x)
 void print_string(va_list x)
 {
 	char *string;
+
 	string = va_arg(x, char *);
 	if (string == NULL)
-	   {
+	{
 		printf("%p", string);
 	}
 	else
