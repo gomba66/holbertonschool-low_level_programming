@@ -46,8 +46,9 @@ void print_string(va_list x)
 	if (p == NULL)
 	{
 		printf("%p", p);
+		return;
 	}
-		printf("%s", va_arg(x, char *));
+	printf("%s", p);
 }
 /**
  * print_all - Function that print anything data-type
