@@ -39,7 +39,7 @@ void print_float(va_list x)
 
 void print_string(va_list x)
 {
-	/*
+
 	char *p;
 
 	p = va_arg(x, char *);
@@ -48,9 +48,9 @@ void print_string(va_list x)
 		printf("%p", p);
 	}
 	else
-	{*/
-	printf("%s", va_arg(x, char *));
-		/*}*/
+	{
+		printf("%s", va_arg(x, char *));
+	}
 }
 /**
  * print_all - Function that print anything data-type
