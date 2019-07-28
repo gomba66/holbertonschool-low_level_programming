@@ -2,20 +2,41 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * print_char - This is a function for print a char
+ * @x: is the character that entry
+ * Return: nothing.
+ */
 void print_char(va_list x)
 {
 	printf("%c", (char) va_arg(x, int));
 }
+/**
+ * print_int - This is a function for print a integer
+ * @x: is the character that entry
+ * Return: nothing.
+ */
 
 void print_int(va_list x)
 {
 	printf("%d", va_arg(x, int));
 }
+/**
+ * print_float - This is a function for print a float
+ * @x: is the character that entry
+ * Return: nothing.
+ */
+
 void print_float(va_list x)
 {
 	printf("%f", (float)va_arg(x, double));
 }
+/**
+ * print_string - This is a function for print a string
+ * @x: is the character that entry
+ * Return: nothing.
+ */
+
 void print_string(va_list x)
 {
 	printf("%s", va_arg(x, char *));
