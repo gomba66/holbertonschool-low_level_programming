@@ -1,7 +1,13 @@
 #ifndef VARIADIC_FUNCT
 #define VARIADIC_FUNCT
 #include <stdarg.h>
-typedef struct types{
+/**
+ * struct types - Is a structure
+ * @c: Is the character that entry.
+ * @f: Is the function
+ */
+typedef struct types
+{
 	char *c;
 	void (*f)();
 } tp;
