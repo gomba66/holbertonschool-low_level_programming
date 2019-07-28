@@ -39,16 +39,16 @@ void print_float(va_list x)
 
 void print_string(va_list x)
 {
-	char *string;
+	char *p;
 
-	string = va_arg(x, char *);
-	if (string == NULL)
+	p = va_arg(x, char *);
+	if (p == NULL)
 	{
-		printf("%p", string);
+		printf("%p", p);
 	}
 	else
 	{
-		printf("%s", string);
+		printf("%s", p);
 	}
 }
 /**
