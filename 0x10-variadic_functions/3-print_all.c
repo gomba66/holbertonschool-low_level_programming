@@ -39,9 +39,17 @@ void print_float(va_list x)
 
 void print_string(va_list x)
 {
-	printf("%s", va_arg(x, char *));
+	char *string;
+	string = va_arg(x, char *);
+	if (string == NULL)
+	   {
+		printf("%p", string);
+	}
+	else
+	{
+		printf("%s", string);
+	}
 }
-
 /**
  * print_all - Function that print anything data-type
  * @format: Is the format data
@@ -59,7 +67,6 @@ void print_all(const char * const format, ...)
 		{"s", print_string}
 	};
 	va_start(x, format);
-
 	while (format[i] != '\0')
 	{
 		j = 0;
