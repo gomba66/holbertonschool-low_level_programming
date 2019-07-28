@@ -47,10 +47,7 @@ void print_string(va_list x)
 	{
 		printf("%p", p);
 	}
-	else
-	{
 		printf("%s", va_arg(x, char *));
-	}
 }
 /**
  * print_all - Function that print anything data-type
