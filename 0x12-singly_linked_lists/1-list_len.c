@@ -4,7 +4,7 @@
  * @h: This is the direccion structure
  * Return: total of nodes.
  */
-size_t list_len(const list_l *h)
+size_t list_len(const list_t *h)
 {
 	int x;
 
