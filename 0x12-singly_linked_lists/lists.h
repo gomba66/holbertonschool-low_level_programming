@@ -1,5 +1,5 @@
 #ifndef LINKED_LIST
-#define LIKED_LIST
+#define LINKED_LIST
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -12,7 +12,6 @@
  * Description: singly linked list node structure
  * for Holberton project
  */
-
 typedef struct list_s
 {
 	char *str;
