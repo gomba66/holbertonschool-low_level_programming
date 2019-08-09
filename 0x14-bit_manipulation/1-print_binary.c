@@ -9,10 +9,7 @@
 void print_binary(unsigned long int n)
 {
 	int x = 0, y = 0;
-	if (n == 0)
-	{
-		_putchar('0');
-	}
+
 	if (n == 0)
 	{
 		return;
@@ -22,6 +19,7 @@ void print_binary(unsigned long int n)
 		x = (n - ((n >> 1) * 2));
 		y = (n >> 1);
 		n = y;
+
 		if (x == 1)
 		{
 			print_binary(n);
