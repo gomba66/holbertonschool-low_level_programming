@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * print_times_table - Entry point
  * @n: number of times for print the table
@@ -8,6 +7,7 @@
 void print_times_table(int n)
 {
 	int op1, op2, res, dig1, dig2, dig3;
+
 	if (n > 0 && n < 15)
 	{
 		for (op1 = 0; op1 <= n; op1++)
@@ -21,38 +21,38 @@ void print_times_table(int n)
 					dig2 = dig1 % 10;
 					dig1 = dig1 / 10;
 					dig3 = res % 10;
-					putchar(dig1 + '0');
-					putchar(dig2 + '0');
-					putchar(dig3 + '0');
+					_putchar(dig1 + '0');
+					_putchar(dig2 + '0');
+					_putchar(dig3 + '0');
 				}
 				else if (res > 9)
 				{
 					dig1 = res / 10;
 					dig2 = res % 10;
-					putchar(dig1 + '0');
-					putchar(dig2 + '0');
+					_putchar(dig1 + '0');
+					_putchar(dig2 + '0');
 				}
 				else
-					putchar(res + '0');
+					_putchar(res + '0');
 				if (op2 < n)
 				{
-					putchar(',');
+					_putchar(',');
 				}
 				if ((op1) * (op2 + 1) < 10 && op2 < n)
 				{
-					putchar(' ');
-					putchar(' ');
-					putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else if (((op1) * (op2 + 1) > 9 && ((op1) * (op2 + 1) < (100)) && (op2 < n)))
 				{
-					putchar(' ');
-					putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else if ((op1) * (op2 + 1) > 99 && op2 < n)
-					putchar(' ');
+					_putchar(' ');
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
