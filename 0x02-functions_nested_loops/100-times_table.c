@@ -3,10 +3,9 @@
  * print_times_table - Entry point
  * @n: number of times for print the table
  */
-
 void print_times_table(int n)
 {
-	int op1, op2, res, dig1, dig2, dig3;
+	int op1, op2, res, dig1, dig2, dig3, xres;
 
 	if (n > 0 && n < 15)
 	{
@@ -34,25 +33,36 @@ void print_times_table(int n)
 				}
 				else
 					_putchar(res + '0');
-				if (op2 < n)
-				{
-					_putchar(',');
-				}
-				if ((op1) * (op2 + 1) < 10 && op2 < n)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if (((op1) * (op2 + 1) > 9 && ((op1) * (op2 + 1) < (100)) && (op2 < n)))
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if ((op1) * (op2 + 1) > 99 && op2 < n)
-					_putchar(' ');
+				xres = ((op1) * (op2 + 1));
+				comas(op2, xres, n);
 			}
 			_putchar('\n');
 		}
 	}
+}
+/**
+ * comas - Function for print the commas
+ * @op2: Second operator.
+ * @xres: Next result.
+ * @n: Number of times that print the table.
+ */
+void comas(int op2, int xres, int n)
+{
+	if (op2 < n)
+	{
+		_putchar(',');
+	}
+	if (xres < 10 && op2 < n)
+	{
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(' ');
+	}
+	else if (xres > 9 && (xres < (100)) && (op2 < n))
+	{
+		_putchar(' ');
+		_putchar(' ');
+	}
+	else if (xres > 99 && op2 < n)
+		_putchar(' ');
 }
