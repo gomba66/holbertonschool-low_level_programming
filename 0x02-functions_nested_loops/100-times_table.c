@@ -7,8 +7,7 @@
 
 void print_times_table(int n)
 {
-	int op1, op2, res;
-
+	int op1, op2, res, dig1, dig2, dig3;
 	if (n > 0 && n < 15)
 	{
 		for (op1 = 0; op1 <= n; op1++)
@@ -16,24 +15,44 @@ void print_times_table(int n)
 			for (op2 = 0; op2 <= n; op2++)
 			{
 				res = op1 * op2;
-				printf("%d", res);
-
+				if (res > 99)
+				{
+					dig1 = res / 10;
+					dig2 = dig1 % 10;
+					dig1 = dig1 / 10;
+					dig3 = res % 10;
+					putchar(dig1 + '0');
+					putchar(dig2 + '0');
+					putchar(dig3 + '0');
+				}
+				else if (res > 9)
+				{
+					dig1 = res / 10;
+					dig2 = res % 10;
+					putchar(dig1 + '0');
+					putchar(dig2 + '0');
+				}
+				else
+					putchar(res + '0');
 				if (op2 < n)
 				{
-					printf(",");
+					putchar(',');
 				}
 				if ((op1) * (op2 + 1) < 10 && op2 < n)
 				{
-					printf("   ");
+					putchar(' ');
+					putchar(' ');
+					putchar(' ');
 				}
-				else if ((op1) * (op2 + 1) < 100 && op2 < n)
+				else if (((op1) * (op2 + 1) > 9 && ((op1) * (op2 + 1) < (100)) && (op2 < n)))
 				{
-					printf("  ");
+					putchar(' ');
+					putchar(' ');
 				}
-				else if (op2 < n)
-					printf(" ");
+				else if ((op1) * (op2 + 1) > 99 && op2 < n)
+					putchar(' ');
 			}
-			printf("\n");
+			putchar('\n');
 		}
 	}
 }
