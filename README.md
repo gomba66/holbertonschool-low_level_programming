@@ -26,7 +26,7 @@ This directory contains a basic introduction to the differents kinds of loops, l
 
 # 0x02-functions_nested_loops Directory:
 
-----------------------------------------
+This directory contains exercises about nested loops, conditionals and more!
 
 # 0x03-debugging Directory:
 
