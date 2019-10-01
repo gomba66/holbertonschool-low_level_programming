@@ -7,7 +7,7 @@ void print_times_table(int n)
 {
 	int op1, op2, res, dig1, dig2, dig3, xres;
 
-	if (n > 0 && n < 15)
+	if (n >= 0 && n < 15)
 	{
 		for (op1 = 0; op1 <= n; op1++)
 		{
