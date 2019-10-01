@@ -13,7 +13,7 @@
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |					 0x00-hello_world						| README.md, 0-preprocessor, 1-compiler, 2-assembler, 3-name, 4-puts.c, 5-printf.c, 6-size.c, 100-intel, 101-quote.c                                                                                                                                                                     |
 | 					 0x01-variables_if_else_while 					| README.md, 0-positive_or_negative.c, 1-last_digit.c, 2-print_alphabet.c, 3-print_alphabets.c, 4-print_alphabt.c, 5-print_numbers.c, 6-print_numberz.c, 7-print_tebahpla.c, 8-print_base16.c, 9-print_comb.c, 10-print_comb2.c, 100-print_comb3.c, 101-print_comb4.c, 102-print_comb5.c |
-|					 0x02-functions_nested_loops 					| |
+|					 0x02-functions_nested_loops 					| README.md, 0-holberton.c,  1-main.c, 3-main.c, 5-sign.c, 7-print_last_digit.c, 9-times_table.c 10-add.c, 2-main.c, 4-isalpha.c, 6-abs.c, 8-24_hours.c, holberton.h, 10-main.c, 2-print_alphabet_x10.c, 4-main.c, 6-main.c, 8-main.c, _putchar.c, 1-alphabet.c, 3-islower.c, 5-main.c, 7-main.c, 9-main.c,|
 | 					 0x03-debugging							| README.md, 0-main.c, 1-main.c, 2-largest_number.c, 3-convert_day.c, 3-main.c, 3-print_remaining_days.c, holberton.h                                           |
 
 # 0x00-hello_world Directory:
