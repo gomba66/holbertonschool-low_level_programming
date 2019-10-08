@@ -1,1 +1,2 @@
-#This is a proyect for holbertonSchool to learn more nested loops ;)
+# 0x04-more_functions_nested_loops
+## This repository contains some exercises about nested loops, conditionals and structured programming.
