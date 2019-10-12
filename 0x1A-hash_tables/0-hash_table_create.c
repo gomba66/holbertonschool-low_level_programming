@@ -3,23 +3,24 @@
 
 /**
  * hash_table_create - This is a function that create a hash table
- * @size: This is the size of the key in the array.
- * Return: Returns a hash table, or NULL in otherwise.
+ * @size: Size of the hash table.
+ * Return: Returns the direction of the hash table, or NULL if it fail.
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *array = NULL;
-	hash_node_t *node = NULL;
+	hash_table_t *table = NULL;
 
-	array = malloc(sizeof(hash_table_t) * size);
-	if (array == NULL)
+	table = malloc(sizeof(hash_table_t) * size);
+	if (table == NULL)
 	{
 		return (NULL);
 	}
-	node = malloc(sizeof(hash_node_t));
-	if (node == NULL)
+	table->array = malloc(sizeof(hash_node_t) * size);
+	if (table->array == NULL)
 	{
 		return (NULL);
 	}
-	return (array);
+	table->size = size;
+
+	return (table);
 }
