@@ -6,8 +6,8 @@
  */
 void print_number(int n)
 {
-	int i = 1, digit = 1, power = 1;
-	int numchar, number = n;
+	unsigned long int i = 1, digit = 1, power = 1;
+	unsigned long int numchar, number = n;
 
 	if (n < 0)
 	{
