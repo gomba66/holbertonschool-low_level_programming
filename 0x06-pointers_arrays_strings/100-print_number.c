@@ -7,7 +7,7 @@
 void print_number(int n)
 {
 	int i = 1, digit = 1, power = 1;
-	unsigned int numchar, number = n;
+	int numchar, number = n;
 
 	if (n < 0)
 	{
