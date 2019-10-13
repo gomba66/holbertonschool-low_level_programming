@@ -1,34 +1,25 @@
 #include "holberton.h"
 /**
  * _strcat - Entry point
- * @dest: is a first parameter
- * @src: is the second parameter
- * Return: "dest" variable
+ * @dest: First string.
+ * @src: Second string.
+ * Return: a string contatenated of the both strings.
  */
 char *_strcat(char *dest, char *src)
 {
-	int z = 0;
-	char *new = dest;
-	int i = 0;
-	char *new2 = src;
-	int a;
+	int a = 0;
 	int b = 0;
 
-	while (*new != '\0')
+	while (dest[a] != '\0')
 	{
-		z++;
-		new++;
-	}
-
-	a = z;
-
-	while (*new2 != '\0')
-	{
-		dest[a] = src[b];
-		i++;
-		new2++;
-		b++;
 		a++;
 	}
+	while (src[b] != '\0')
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
+	dest[a] = '\0';
 	return (dest);
 }
