@@ -16,6 +16,8 @@
 |					 0x02-functions_nested_loops 					| README.md, 0-holberton.c, 100-main.c, 100-times_table.c, 101-natural.c, 102-fibonacci.c, 103-fibonacci.c, 104-fibonacci.c, 10-add.c, 10-main.c, 11-main.c, 11-print_to_98.c, 1-alphabet.c, 1-main.c, 2-main.c, 2-print_alphabet_x10.c, 3-islower.c, 3-main.c, 4-isalpha.c, 4-main.c, 5-main.c, 5-sign.c, 6-abs.c, 6-main.c, 7-main.c, 7-print_last_digit.c, 8-24_hours.c, 8-main.c, 9-main.c, 9-times_table.c, holberton.h, _putchar.c |
 | 					 0x03-debugging							| README.md, 0-main.c, 1-main.c, 2-largest_number.c, 3-convert_day.c, 3-main.c, 3-print_remaining_days.c, holberton.h                                           	       		       |
 |					 0x04-more_functions_nested_loops				| README.md, 0-isupper.c, 0-main.c, 100-prime_factor.c, 10-main.c, 10-print_triangle.c, 1-isdigit.c, 1-main.c, 2-main.c, 2-mul.c, 3-main.c, 3-print_numbers.c, 4-main.c, 4-print_most_numbers.c, 5-main.c, 5-more_numbers.c, 6-main.c, 6-print_line.c, 7-main.c, 7-print_diagonal.c, 8-main.c, 8-print_square.c, 9-fizz_buzz.c, holberton.h, _putchar.c                                       |
+|					 0x05-pointers_arrays_strings					| README.md, 0-main.c, 1-main.c, 2-main.c, 3-main.c, 4-main.c, 5-main.c, 6-main.c, 7-main.c, 8-main.c, 9-main.c, holberton.h, 0-reset_to_98.c, 1-swap.c, 2-strlen.c, 3-puts.c, 4-print_rev.c, 5-rev_string.c, 6-puts2.c, 7-puts_half.c, 8-print_array.c, 9-strcpy.c, _putchar.c
+					 								|
 
 
 
@@ -38,3 +40,7 @@ This directory contains some exerises about of how to fix errors of logic in pro
 # 0x04-more_functions_nested_loops Directory:
 
 This directory contains more exercises about functions, nested loops and structured programming.
+
+# 0x05-pointers_arrays_strings Directory:
+
+This directory contains exercises about pointers, arrays and strings.
