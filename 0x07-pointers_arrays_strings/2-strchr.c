@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <unistd.h>
+#include <stdio.h>
 /**
  * _strchr - Entry point
  * This is a function that locate a character in a string
@@ -14,13 +16,10 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return (s + i);
+			return (&s[i]);
 		}
 		else
-		{
-			return ('\0');
-		}
 		i++;
 	}
-	return ('\0');
+	return (NULL);
 }
