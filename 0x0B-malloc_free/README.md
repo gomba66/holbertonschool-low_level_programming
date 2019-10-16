@@ -1,1 +1,2 @@
-#This is a new project, about the malloc and free functions
+# 0x0B-malloc_free
+This directory contains some exercises of introduction to the manage of the HEAP memory
