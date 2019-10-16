@@ -1,46 +1,25 @@
 #include "holberton.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
- * _strdup - Entry point
- * This is a program for copy a string and return the copy
- * Return: Copy of a string.
- * @str: string.
+ * _strdup - Function that returns a pointer to a new string in HEAP memory
+ * @str: string that is passed as argument.
+ * Return: A pointer to the new string, NULL if str is null, NULL if it fail.
  */
 char *_strdup(char *str)
 {
-	int i = 0;
-	int n = 1;
-	char *x;
+	char *newstr = NULL;
+	int i = 0, x = 0;
 
-	if (str == '\0')
+	if (str[0] == '\0' || str == NULL)
+		return (NULL);
+	while (str[i] != '\0')
+		i++;
+	newstr = malloc(sizeof(char) * i);
+	if (newstr == NULL)
+		return (NULL);
+	while (x <= i)
 	{
-		return ('\0');
+		newstr[x] = str[x];
+		x++;
 	}
-	else
-	{
-		while (str[i] != '\0')
-		{
-			n++;
-			i++;
-		}
-
-		i = 0;
-
-		x = malloc(sizeof(char) * n);
-		if (x == '\0')
-		{
-			return ('\0');
-		}
-		else
-		{
-			while (i < n)
-			{
-				x[i] = str[i];
-				i++;
-			}
-			return (x);
-		}
-		free(x);
-	}
+	return (newstr);
 }
