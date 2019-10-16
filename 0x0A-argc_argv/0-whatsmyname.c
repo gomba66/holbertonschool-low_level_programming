@@ -7,10 +7,8 @@
  */
 int main(int argc, char **argv)
 {
-	int a = 0;
+	(void)argc;
 
-	a = argc;
-
-	printf("%s\n", argv[a - 1]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
