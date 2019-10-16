@@ -9,6 +9,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *newstring;
 	int t1 = 1, t2 = 1, i = 0, total = 0;
+
 	if (s1 == NULL)
 		s1 = "";
 	while (s1[i] != '\0')
