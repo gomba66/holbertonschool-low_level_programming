@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * is_prime - Function fot to know if a number is prime
+ * prime - Function fot to know if a number is prime
  * @n: number.
  * @c: iterator.
  * Return: 1 if the number is prime, 0 in otherwise.
