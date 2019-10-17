@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * free_grid - Function for to free the grid.
  * @grid: The grid.
