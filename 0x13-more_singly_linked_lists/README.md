@@ -1,3 +1,2 @@
-## More singly linked lists
----------------------------
-This is a project about linked lists.
+# 0x13-more_singly_linked_lists
+This directory contains some exercises about single linked lists
