@@ -1,4 +1,2 @@
-# Learning how to use linked lists
-
-## Author
-[Daniel Ramirez](https://twitter.com/gomba662)
+# 0x12-singly_linked_lists
+This directory contains a recopilation of exercises about singly linked lists
