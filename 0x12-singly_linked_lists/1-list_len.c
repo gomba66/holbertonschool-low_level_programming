@@ -1,17 +1,20 @@
 #include "lists.h"
 /**
- * list_len - This is a function for count the nodes and return this counter
- * @h: This is the direccion structure
- * Return: total of nodes.
+ * list_len - Function that returns the number of elements
+ * in the linked list.
+ *
+ * @h: head of the list.
+ * Return: The number of nodes of the linked list.
  */
 size_t list_len(const list_t *h)
 {
-	int x = 0;
+	size_t n = 0;
 
-	while (h)
+	while (h != NULL)
 	{
+		n++;
 		h = h->next;
-		x++;
 	}
-	return (x);
+
+	return (n);
 }
