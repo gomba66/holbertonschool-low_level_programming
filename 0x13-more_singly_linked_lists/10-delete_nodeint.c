@@ -7,7 +7,6 @@
  * @index: Index for to navigate through the list.
  * Return: 1 On success or -1 in otherwise.
  */
-unsigned int _lenll(listint_t **head);
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	int status = 1;
@@ -39,6 +38,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	free(temp2);
 	return (status);
 }
+/**
+ * _lenll - Function that counts the number of nodes in the linked list.
+ * @head: Head of the list.
+ * Return: The number of nodes of the list.
+ */
 unsigned int _lenll(listint_t **head)
 {
 	unsigned int count = 0;
