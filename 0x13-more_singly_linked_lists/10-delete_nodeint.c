@@ -7,15 +7,20 @@
  * @index: Index for to navigate through the list.
  * Return: 1 On success or -1 in otherwise.
  */
+unsigned int _lenll(listint_t **head);
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	int status = 1;
 	unsigned int n = 1;
 	listint_t *temph = *head, *temp2 = NULL;
 
-	if (*head == NULL)
+	if (_lenll(&*head) == 0)
 	{
-		return (status * -1);
+		return (-1);
+	}
+	if (*head == NULL || _lenll(&*head) < index)
+	{
+		return (-1);
 	}
 	if (index == 0)
 	{
@@ -33,4 +38,17 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	temph->next = temph->next->next;
 	free(temp2);
 	return (status);
+}
+unsigned int _lenll(listint_t **head)
+{
+	unsigned int count = 0;
+	listint_t *copyh;
+
+	copyh = *head;
+	while (copyh != NULL)
+	{
+		copyh = copyh->next;
+		count++;
+	}
+	return (count);
 }
