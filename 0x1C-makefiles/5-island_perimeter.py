@@ -9,6 +9,5 @@ def island_perimeter(grid):
         for b in range(len(grid[a])):
             if grid[a][b] == 1:
                 total = total + 1
-        print()
     total = ((((len(grid[a])) * (len(grid))) - total) // 2)
     return total
