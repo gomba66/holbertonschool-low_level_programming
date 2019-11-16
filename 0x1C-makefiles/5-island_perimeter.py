@@ -50,8 +50,8 @@ def island_perimeter(grid):
                     if grid[b][a + 1] == 0:
                         total = total + 1
             #borde izquierdo
-            elif (b > 0 and b < (len(grid) - 1))\
-            and ((a == 0) and a < len(grid[b]) - 1):
+            elif (b > 0 and b < (len(grid) - 1)) and ((a == 0) and a <
+                                                      len(grid[b]) - 1):
                 if grid[b][a] == 1:
                     total = total + 1
                     if grid[b - 1][a] == 0:
@@ -78,8 +78,8 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b][a + 1] == 0:
                         total = total + 1
-            elif (b > 0 and b < len(grid) - 1) and\
-            (a > 0 and a < len(grid[b]) - 1):
+            elif (b > 0 and b < len(grid) - 1) and (a > 0 and a <
+                                                    len(grid[b]) - 1):
                 if grid[b][a] == 1:
                     if grid[b][a - 1] == 0:
                         total = total + 1
