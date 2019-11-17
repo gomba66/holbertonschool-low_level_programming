@@ -7,7 +7,7 @@ def island_perimeter(grid):
     total = 0
     for b in range(len(grid)):
         for a in range(len(grid[b])):
-            #esquina izquierda
+            #left corner
             if (a == 0) and (b == 0):
                 if grid[b][a] == 1:
                     total = total + 2
@@ -15,7 +15,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b + 1][a] == 0:
                         total = total + 1
-            #esquina derecha
+            #right corner
             elif (a == len(grid[b]) - 1) and b == 0:
                 if grid[b][a] == 1:
                     total = total + 2
@@ -23,7 +23,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b][a - 1] == 0:
                         total = total + 1
-            #esquina inferior izquierda
+            #lower-left corner
             elif a == 0 and b == (len(grid) - 1):
                 if grid[b][a] == 1:
                     total = total + 2
@@ -31,7 +31,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b - 1][a] == 0:
                         total = total + 1
-            #esquina inferior derecha
+            #lower-right corner
             elif b == (len(grid) - 1) and a == (len(grid[b]) - 1):
                 if grid[b][a] == 1:
                     total = total + 2
@@ -39,7 +39,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b][a - 1] == 0:
                         total = total + 1
-            #borde superior
+            #top edge
             elif (b == 0 and a > 0) and a < (len(grid[b]) - 1):
                 if grid[b][a] == 1:
                     total = total + 1
@@ -49,7 +49,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b][a + 1] == 0:
                         total = total + 1
-            #borde izquierdo
+            #left edge
             elif (b > 0 and b < (len(grid) - 1)) and ((a == 0) and a <
                                                       len(grid[b]) - 1):
                 if grid[b][a] == 1:
@@ -60,6 +60,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b + 1][a] == 0:
                         total = total + 1
+            #right edge
             elif (b > 0 and (b < len(grid) - 1)) and (a == len(grid[b]) - 1):
                 if grid[b][a] == 1:
                     total = total + 1
@@ -69,6 +70,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b + 1][a] == 0:
                         total = total + 1
+            #bottom edge
             elif (b == len(grid) - 1) and a > 0 and a < len(grid[b]) - 1:
                 if grid[b][a] == 1:
                     total = total + 1
@@ -78,6 +80,7 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b][a + 1] == 0:
                         total = total + 1
+            #cases that are neither edges nor corners
             elif (b > 0 and b < len(grid) - 1) and (a > 0 and a <
                                                     len(grid[b]) - 1):
                 if grid[b][a] == 1:
