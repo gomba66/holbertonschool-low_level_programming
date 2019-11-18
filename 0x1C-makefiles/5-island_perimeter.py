@@ -92,6 +92,4 @@ def island_perimeter(grid):
                         total = total + 1
                     if grid[b + 1][a] == 0:
                         total = total + 1
-            print(grid[b][a], end='')
-        print()
     return total
