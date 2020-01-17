@@ -29,9 +29,9 @@ int linear_search(int *array, size_t size, int value)
 		{
 			count++;
 		}
+		if (array[count] == '\0')
+			return (-1);
 	}
-	if (array[count] == '\0')
-		return (-1);
 
 	return (count);
 }
